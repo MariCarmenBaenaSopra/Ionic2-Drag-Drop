@@ -1,0 +1,40 @@
+<ion-header absolute-drag>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content fullscreen>
+    <!--los elementos que tienen esta directiva aplicada ([absolute-drag] - SE PUEDE VER EN absolute-drag.ts)
+        se posicionarán de forma absoluta, por lo que esto le permite especificar dónde debe estar su posición 
+        inicial antes de arrastrarla.-->
+    
+    <!--1º ELEMENTO QUE ARRASTRAR - tipo boton -->
+           <!-- absolute-drag startLeft="20" startTop="100"-->
+    <button ion-button absolute-drag startLeft="20" startTop="100">Drag Me!</button>
+    
+    <!--2º ELEMENTO QUE ARRASTRAR - tipo boton -->
+           <!-- absolute-drag -->
+    <button ion-button absolute-drag>Drag Me!</button>
+ 
+    <!--3º ELEMENTO QUE ARRASTRAR - tipo tarjeta -->
+           <!-- absolute-drag startLeft="200" startTop="200"-->
+    <ion-card absolute-drag startLeft="200" startTop="200" style="color: red">
+        <ion-card-content>
+            Drag me!
+        </ion-card-content>
+    </ion-card>
+ 
+    <!--4º ELEMENTO QUE ARRASTRAR - tipo text-->
+           <!-- absolute-drag-->
+    <p absolute-drag>
+        Drag me!
+    </p>
+ 
+    <!--5º ELEMENTO QUE ARRASTRAR - tipo img-->
+           <!-- absolute-drag-->
+    <img src="http://orig02.deviantart.net/fc9b/f/2011/225/3/8/yahiko_avatar_75x75_by_cartoonperson-d46er6t.png" absolute-drag />
+ 
+</ion-content>
